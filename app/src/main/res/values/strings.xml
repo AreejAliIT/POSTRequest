@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">POSTRequest</string>
+    <string name="textview">TextView</string>
+</resources>
