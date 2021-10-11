@@ -33,8 +33,13 @@ class ViewActivity : AppCompatActivity() {
         getData()
 
         val btn = findViewById<ImageButton>(R.id.btn)
+        val btnUpdateDelete = findViewById<Button>(R.id.btn_Update_Delete)
         btn.setOnClickListener{
             val intent = Intent(this , MainActivity::class.java)
+            startActivity(intent)
+        }
+        btnUpdateDelete.setOnClickListener{
+            val intent = Intent(this , UpdateActivity::class.java)
             startActivity(intent)
         }
     }

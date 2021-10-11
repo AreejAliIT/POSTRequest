@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
     private suspend fun postData(name:String, loc:String){
          withContext(Dispatchers.Main) {
-            apiInterface!!.postData(Data(name , loc)).enqueue(object : Callback<List<Data.Names>> {
+            apiInterface!!.postData(Data(name, loc)).enqueue(object : Callback<List<Data.Names>> {
                     override fun onResponse(call: Call<List<Data.Names>>, response: Response<List<Data.Names>>) {
                         Toast.makeText(applicationContext, "Added Successfully", Toast.LENGTH_SHORT).show()
                     }
